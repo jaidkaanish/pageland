@@ -7,10 +7,10 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Auth0Provider
-    domain="dev-eznxpp0e8k3w2tkj.us.auth0.com"
-    clientId="NjoEqFCcRbQtdTe1bedJzamwXVMp4Bj4"
+    domain={import.meta.env.VITE_AUTH0_DOMAIN}
+    clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
     authorizationParams={{
-      redirect_uri: "http://localhost:3000/" 
+      redirect_uri: "https://new-ide.vercel.app/" 
     
     }}
   >
